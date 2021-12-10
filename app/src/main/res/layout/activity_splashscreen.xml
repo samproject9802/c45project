@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".splashscreen">
+
+    <TextView
+        android:id="@+id/anim_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:text="@string/c4_5"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textFontWeight="700"
+        android:textSize="50sp"
+        android:fontFamily="@font/azonix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/anim_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="396dp"
+        android:fontFamily="@font/azonix"
+        android:padding="0px"
+        android:text="@string/algorithms"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textFontWeight="700"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_text2">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progbar_check"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="160dp"
+            app:cpb_background_progressbar_color="#b6bbd8"
+            app:cpb_background_progressbar_width="4dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="#e8bb25"
+            app:cpb_progressbar_width="4dp"
+            app:cpb_round_border="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textFontWeight="700"
+            android:fontFamily="@font/azonix"
+            android:layout_alignBottom="@+id/progbar_check"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/anim_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/azonix"
+        android:text="@string/checking_internet_connection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
